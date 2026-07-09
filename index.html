@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safwan | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff6b81,#ffb347);
+color:white;
+overflow-x:hidden;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:320px;
+height:420px;
+object-fit:cover;
+border-radius:20px;
+border:5px solid white;
+box-shadow:0 0 35px rgba(255,255,255,.5);
+transition:.5s;
+}
+
+.hero img:hover{
+transform:scale(1.05);
+}
+
+.content{
+max-width:600px;
+}
+
+.content h3{
+font-size:28px;
+}
+
+.content h1{
+font-size:55px;
+margin:10px 0;
+}
+
+.content p{
+line-height:1.8;
+font-size:18px;
+}
+
+button{
+padding:15px 35px;
+border:none;
+margin-top:25px;
+background:white;
+color:#ff4d6d;
+font-size:18px;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+transform:translateY(-5px);
+background:yellow;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.15);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px white;
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,.2);
+}
+
+@media(max-width:768px){
+
+.hero img{
+width:260px;
+height:340px;
+}
+
+.content h1{
+font-size:38px;
+}
+
+.content h3{
+font-size:22px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">Safwan</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#achievements">Achievements</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<img src="safwan.jpg" alt="Safwan">
+
+<div class="content">
+
+<h3>Hello, I'm</h3>
+
+<h1>Safwan</h1>
+
+<p>
+I am a passionate student who enjoys learning modern technology and creating websites.
+I love exploring Artificial Intelligence, improving my programming skills, and building creative digital projects.
+My goal is to become a successful software engineer and entrepreneur while continuing to learn new technologies.
+</p>
+
+<button onclick="showMessage()">Contact Me</button>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h1 class="title">About Me</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Student</h2>
+<p>
+I study at Habib Public School and enjoy learning computer science and technology.
+</p>
+</div>
+
+<div class="card">
+<h2>Web Developer</h2>
+<p>
+Completed a Website Development course and enjoy designing responsive websites using HTML, CSS and JavaScript.
+</p>
+</div>
+
+<div class="card">
+<h2>AI Learner</h2>
+<p>
+Currently learning Artificial Intelligence and discovering how AI can solve real-world problems.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="achievements">
+
+<h1 class="title">Achievements</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Website Development</h2>
+<p>Successfully completed a website development course.</p>
+</div>
+
+<div class="card">
+<h2>Artificial Intelligence</h2>
+<p>Currently expanding my knowledge by studying Artificial Intelligence.</p>
+</div>
+
+<div class="card">
+<h2>Creative Projects</h2>
+<p>Building personal websites and technology projects to strengthen my skills.</p>
+</div>
+
+<div class="card">
+<h2>Future Goal</h2>
+<p>To become a professional software engineer and entrepreneur.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Made with ❤️ by Safwan</h2>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+function showMessage(){
+alert("Thank you for visiting my portfolio!");
+}
+
+</script>
+
+</body>
+</html>
